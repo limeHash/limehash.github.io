@@ -1,11 +1,12 @@
 @font-face { font-family: 'roboto'; src: url('../asset/font/roboto/Roboto-Regular.ttf') format('truetype'); }
 @font-face { font-family: 'roboto-medium'; src: url('../asset/font/roboto/Roboto-Medium.ttf') format('truetype'); }
-@font-face { font-family: 'ralewayBlack'; src: url('../asset/font/raleway/Raleway-BlackItalic.ttf') format('truetype'); }
+@font-face { font-family: 'ralewayBlack'; src: url('../asset/font/raleway/Raleway-Black.ttf') format('truetype'); }
 
 a{ text-decoration: none; }
 a.sidebar{ color: #24292e; }
 a.sidebar:hover{ font-weight: bold; color: #4CAF50;}
 a.webName{
+    margin-right: 10px;
     font-family: ralewayBlack, monospace;
     font-size: 24px;
 }
@@ -58,8 +59,9 @@ tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
     border-radius: 4px;
     background-color: #fff;
 }
-.pop{ width: 16px; height: 16px; float: right; background: #e1ecf4; border-radius: 50%; text-align: center; }
 .popPHP{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #8892bf; color: #fff; border-radius: 0px; text-align: center; }
 .popJS{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #fcdc00; border-radius: 0px; text-align: center; }
+.pop-sidebar{ float: right; height: 12px; line-height: 12px; padding: 4px 4px; background: #e1ecf4; border-radius: 4px; }
+.pop-sidebar-green{ float: right; height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#A5D6A7, #66BB6A); color: #fff; border-radius: 4px; }
 .popHTML{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #ffcdd2; border-radius: 0px; text-align: center; }
 .ta-c{ text-align: center; }
