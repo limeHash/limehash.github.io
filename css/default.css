@@ -1,0 +1,45 @@
+@font-face { font-family: 'roboto'; src: url('../asset/font/Roboto-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'roboto-medium'; src: url('../asset/font/Roboto-Medium.ttf') format('truetype'); }
+
+a{ text-decoration: none; }
+a.webName{
+    font-family: roboto, monospace;
+    font-size: 24px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: roboto, monospace;
+    font-size: 12px;
+}
+div.header{ width: 100%; height: 70px; line-height: 70px; margin: 0 auto; padding: 0 10%; background-color: #24292e; color: #fff; box-sizing: border-box;}
+div.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+    overflow: auto;
+}
+h1, h2, h3{font-family: roboto-medium, monospace; font-weight: normal; margin: 5px 0; }
+hr{
+    border: none; border-top: 1px solid #ccc;
+}
+table.def{
+    border-collapse: collapse;
+}
+.fit{ width: 100%; }
+.side{
+    float: left;
+    width: 20%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.content{
+    float: right;
+    width: 79%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
