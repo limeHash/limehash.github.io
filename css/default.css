@@ -14,7 +14,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: roboto, monospace;
-    font-size: 14px;
+    font-size: 12px;
     background-color: #fafafa;
     color: #24292e;
 }
@@ -26,6 +26,7 @@ div.wrapper{
     overflow: auto;
 }
 h1, h2, h3{font-family: roboto-medium, monospace; font-weight: normal; margin: 5px 0; }
+p{ margin: 0px 0; }
 hr{
     border: none; border-top: 1px solid #ddd;
 }
@@ -36,9 +37,10 @@ td.def{ padding: 4px 8px; }
 th.def{ padding: 4px 8px; background-color: #3a81bc; color: #fff; text-align: left; font-family: roboto, monospace; font-weight: normal;}
 tr.def{ border-bottom: 1px solid #ddd; }
 tr.def:nth-child(even){ background-color: #f5f5f5; }
-tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
+tr.def:last-child{ border-bottom: 2px solid #3a81bc; } 
 
 .fit{ width: 100%; }
+.fl-r{ float: right; }
 .wi-50{ width: 50%; }
 .side{
     float: left;
@@ -61,7 +63,8 @@ tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
 }
 .popPHP{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #8892bf; color: #fff; border-radius: 0px; text-align: center; }
 .popJS{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #fcdc00; border-radius: 0px; text-align: center; }
-.pop-sidebar{ float: right; height: 12px; line-height: 12px; padding: 4px 4px; background: #e1ecf4; border-radius: 4px; }
-.pop-sidebar-green{ float: right; height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#A5D6A7, #66BB6A); color: #fff; border-radius: 4px; }
+.pop{ height: 12px; line-height: 12px; padding: 4px 4px; background: #e1ecf4; border-radius: 4px; font-size: 10px; }
+.pop-green{ height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#A5D6A7, #66BB6A); color: #fff; border-radius: 4px; font-size: 10px; }
+.pop-red{ height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#F48FB1, #EC407A); color: #fff; border-radius: 4px; font-size: 10px; }
 .popHTML{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #ffcdd2; border-radius: 0px; text-align: center; }
 .ta-c{ text-align: center; }
