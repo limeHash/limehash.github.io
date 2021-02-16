@@ -4,7 +4,7 @@
 
 a{ text-decoration: none; }
 a.sidebar{ color: #24292e; }
-a.sidebar:hover{ font-weight: bold; color: #4CAF50;}
+a.sidebar:hover{ font-family: roboto-medium, monospace; color: #4CAF50;}
 a.webName{
     margin-right: 10px;
     font-family: ralewayBlack, monospace;
