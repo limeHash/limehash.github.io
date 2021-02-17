@@ -29,8 +29,10 @@ div.wrapper{
     padding: 10px 0;
     overflow: auto;
 }
-h1, h2, h3{font-family: roboto-medium, monospace; font-weight: normal; margin: 5px 0; }
+h2{font-family: roboto-medium, monospace; font-weight: normal; margin: 10px 0 5px 0; }
+h3{font-family: roboto-medium, monospace; font-weight: normal; margin: 5px 0; }
 p{ margin: 0px 0; }
+p.blue{ color: #3a81bc; }
 hr{
     border: none; border-top: 1px solid #ddd;
 }
@@ -43,6 +45,7 @@ th.def{ padding: 4px 8px; background-color: #3a81bc; color: #fff; text-align: le
 tr.def{ border-bottom: 1px solid #ddd; }
 tr.def:nth-child(even){ background-color: #f5f5f5; }
 tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
+li{ margin-left: -10px; }
 
 .modal-wrapper{ display: none; position: fixed; z-index: 1; padding-top: 150px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8); }
 .modal-s-content { width: 33%; background-color: #fff; color: #000; margin: auto; padding: 24px; border-radius: 4px; text-align: left; }
@@ -78,3 +81,4 @@ tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
 .pop-red{ height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#F48FB1, #EC407A); color: #fff; border-radius: 4px; font-size: 10px; }
 .pop-red:hover{ background: linear-gradient(#EC407A, #F48FB1); }
 .ta-c{ text-align: center; }
+.va-tb{ vertical-align: text-bottom; }
