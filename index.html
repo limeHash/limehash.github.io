@@ -12,9 +12,66 @@
         <div class="wrapper">
             <div class="side">
                 <a class="sidebar" href="http://limehash.github.io"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
-                <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
+                <a class="sidebar" id="btTry"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
+                <div id="mdTry" class="modal-wrapper">
+                    <div class="modal-s-content">
+                        <span id="exTry" class="close">&times;</span>
+                        <h2>Akun Demo</h2>
+                        Anda dapat mencoba aplikasi SIM-RS secara gratis melalui link berikut<hr>
+                        <button class="white">Cara Akses</button>
+                        <button class="blue">Masuk</button>
+                        <script>
+                            var mdTry = document.getElementById("mdTry");
+                            var btTry = document.getElementById("btTry");
+                            var exTry = document.getElementById("exTry");
+                            var inTry = document.getElementById("drug");
+                            btTry.onclick = function() {
+                            mdTry.style.display = "block";
+                            inTry.focus();
+                            }
+                            exTry.onclick = function() {
+                            mdTry.style.display = "none";
+                            }
+                            window.onclick = function(event) {
+                                if (event.target == mdTry) {
+                                    mdTry.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
                 <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/package.png">Detail Fitur</a><hr>
-                <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/computer_go.png">Download</a><hr>
+                <a class="sidebar" id="btDL"><img class="icon" src="asset/icon/silk/computer_go.png">Download</a><hr>
+                    <div id="mdDL" class="modal-wrapper">
+                        <div class="modal-s-content">
+                            <span id="exDL" class="close">&times;</span>
+                            <h2>Download Aplikasi SIM-RS v.2.4</h2>
+                            Masukkan kode download yang telah terverifikasi untuk melanjutkan. <hr>
+
+                            <form method="post">
+                                <input type="text" placeholder="24 digit kode">
+                                <button class="blue" type="submit">Download</button>
+                            </form><br>
+                            <script>
+                                var mdDL = document.getElementById("mdDL");
+                                var btDL = document.getElementById("btDL");
+                                var exDL = document.getElementById("exDL");
+                                var inDL = document.getElementById("drug");
+                                btDL.onclick = function() {
+                                mdDL.style.display = "block";
+                                inDL.focus();
+                                }
+                                exDL.onclick = function() {
+                                mdDL.style.display = "none";
+                                }
+                                window.onclick = function(event) {
+                                    if (event.target == mdDL) {
+                                        mdDL.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
                 <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/plugin.png">Ekstensi</a> <span class="pop fl-r">1</span> <hr>
                 <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/book.png">Panduan</a><hr>
                 <a class="sidebar" href="project.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
@@ -35,12 +92,12 @@
                             </p>
                         </td>
                         <td>&emsp;</td>
-                        <td class="def"><img src="asset/icon/uxwing/internet-web-browser.png"> </td>
+                        <td class="def"><img src="asset/icon/uxwing/desktop-mobile.png"> </td>
                         <td class="def">
                             <h3>Kemudahan Akses</h3><hr>
                             <p>
-                                Dapat diakses menggunakan berbagai browser.<br>
-                                Firefox, Chrome, atau browser apapun favorit anda.
+                                Berjalan lancar pada perangkat Desktop dan Tablet.<br>
+                                Cukup buka dengan browser favorit anda.
                             </p>
                         </td>
                     </tr>
@@ -51,7 +108,7 @@
                             <h3>Server Database Lokal</h3><hr>
                             <p>
                                 Simpan data pasien pada server lokal milik anda. <br>
-                                Back-up database anda kapanpun yang anda inginkan.
+                                Back-up database kapanpun yang anda inginkan.
                             </p>
                         </td>
                         <td>&emsp;</td>
@@ -66,21 +123,21 @@
                     </tr>
                     <tr><td>&emsp;</td></tr>
                     <tr>
-                        <td class="def"><img src="asset/icon/uxwing/extension.png"> </td>
+                        <td class="def"><img src="asset/icon/uxwing/addon-extension.png"> </td>
                         <td class="def">
-                            <h3>Tersedia Ekstensi Siap Install</h3><hr>
+                            <h3>Sudah Terinstall Ekstensi</h3><hr>
                             <p>
-                                Tambahkan berbagai ekstensi pada aplikasi anda. <br>
-                                Display antrian, pengingat waktu adzan, dan lain lain.
+                                Telah ditambahkan ekstensi pada aplikasi anda. <br>
+                                Pencetak nomor antrian, display antrian, dan lain lain.
                             </p>
                         </td>
                         <td>&emsp;</td>
-                        <td class="def"><img src="asset/icon/uxwing/touch.png"> </td>
+                        <td class="def"><img src="asset/icon/uxwing/cloud-data-sync.png"> </td>
                         <td class="def">
-                            <h3>Mudah Digunakan</h3><hr>
+                            <h3>Terintegrasi Dengan BPJS</h3><hr>
                             <p>
-                                Dibuat dengan mengutamakan kemudahan pengguna.<br>
-                                Sederhana, namun <em>Powerfull</em>.
+                                Aplikasi siap <em>bridging</em> dengan layanan BPJS.<br>
+                                Karena kecepatan dan efisiensi waktu pelayanan diutamakan.
                             </p>
                         </td>
                     </tr>

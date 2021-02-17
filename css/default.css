@@ -18,6 +18,10 @@ body{
     background-color: #fafafa;
     color: #24292e;
 }
+button.blue{ padding: 4px 16px; background-color: #3a81bc; color: #fff; border: 1px solid #3a81bc; border-radius: 4px; }
+button.blue:hover{ background-color: #386b98; }
+button.white{ padding: 4px 16px; background-color: #fff; color: #000; border: 1px solid #3a81bc; border-radius: 4px; }
+button.white:hover{ background-color: #ddd; }
 div.header{ width: 100%; height: 70px; line-height: 70px; margin: 0 auto; padding: 0 10%; background-color: #24292e; color: #fff; box-sizing: border-box;}
 div.wrapper{
     width: 80%;
@@ -32,12 +36,19 @@ hr{
 }
 img.icon{ vertical-align: middle; margin-right: 10px;}
 img.icon-s{ height: 16px; vertical-align: middle;}
+input{ padding: 4px; border: 1px solid #ddd; font-size: 12px; }
 table.def{ border-collapse: collapse; }
 td.def{ padding: 4px 8px; }
 th.def{ padding: 4px 8px; background-color: #3a81bc; color: #fff; text-align: left; font-family: roboto, monospace; font-weight: normal;}
 tr.def{ border-bottom: 1px solid #ddd; }
 tr.def:nth-child(even){ background-color: #f5f5f5; }
-tr.def:last-child{ border-bottom: 2px solid #3a81bc; } 
+tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
+
+.modal-wrapper{ display: none; position: fixed; z-index: 1; padding-top: 150px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8); }
+.modal-s-content { width: 33%; background-color: #fff; color: #000; margin: auto; padding: 24px; border-radius: 4px; text-align: left; }
+.close { color: #aaa; float: right; font-size: 24px; font-weight: bold; }
+.close:hover,
+.close:focus { color: #000; text-decoration: none; cursor: pointer; }
 
 .fit{ width: 100%; }
 .fl-r{ float: right; }
@@ -61,10 +72,9 @@ tr.def:last-child{ border-bottom: 2px solid #3a81bc; }
     border-radius: 4px;
     background-color: #fff;
 }
-.popPHP{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #8892bf; color: #fff; border-radius: 0px; text-align: center; }
-.popJS{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #fcdc00; border-radius: 0px; text-align: center; }
 .pop{ height: 12px; line-height: 12px; padding: 4px 4px; background: #e1ecf4; border-radius: 4px; font-size: 10px; }
 .pop-green{ height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#A5D6A7, #66BB6A); color: #fff; border-radius: 4px; font-size: 10px; }
+.pop-green:hover{ background: linear-gradient(#66BB6A, #A5D6A7); }
 .pop-red{ height: 12px; line-height: 12px; padding: 4px 4px; background: linear-gradient(#F48FB1, #EC407A); color: #fff; border-radius: 4px; font-size: 10px; }
-.popHTML{ height: 16px; padding: 2px 4px; box-sizing: border-box; background: #ffcdd2; border-radius: 0px; text-align: center; }
+.pop-red:hover{ background: linear-gradient(#EC407A, #F48FB1); }
 .ta-c{ text-align: center; }
