@@ -10,74 +10,82 @@
             <a class="webName">SIM-RS</a> v.2.4
         </div>
         <div class="wrapper">
-            <div class="side">
-                <a class="sidebar" href="http://limehash.github.io"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
-                <a class="sidebar" id="btTry"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
-                <div id="mdTry" class="modal-wrapper">
-                    <div class="modal-s-content">
-                        <span id="exTry" class="close">&times;</span>
-                        <h2>Akun Demo</h2>
-                        Anda dapat mencoba aplikasi SIM-RS secara gratis melalui link berikut<hr>
-                        <button class="white">Cara Akses</button>
-                        <button class="blue">Masuk</button>
-                        <script>
-                            var mdTry = document.getElementById("mdTry");
-                            var btTry = document.getElementById("btTry");
-                            var exTry = document.getElementById("exTry");
-                            var inTry = document.getElementById("drug");
-                            btTry.onclick = function() {
-                            mdTry.style.display = "block";
-                            inTry.focus();
-                            }
-                            exTry.onclick = function() {
-                            mdTry.style.display = "none";
-                            }
-                            window.onclick = function(event) {
-                                if (event.target == mdTry) {
-                                    mdTry.style.display = "none";
-                                }
-                            }
-                        </script>
-                    </div>
-                </div>
-                <a class="sidebar" href="feature.html"><img class="icon" src="asset/icon/silk/package.png">Detail Fitur</a><hr>
-                <a class="sidebar" id="btDL"><img class="icon" src="asset/icon/silk/computer_go.png">Download</a><hr>
-                    <div id="mdDL" class="modal-wrapper">
+            <div class="wrapper-side"><!-- Start of wrapper-side -->
+                <div class="side">
+                    <a class="sidebar" href="http://limehash.github.io"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
+                    <a class="sidebar" id="btTry"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
+                    <div id="mdTry" class="modal-wrapper">
                         <div class="modal-s-content">
-                            <span id="exDL" class="close">&times;</span>
-                            <h2>Download Aplikasi SIM-RS v.2.4</h2>
-                            Masukkan kode download yang telah terverifikasi untuk melanjutkan. <hr>
-
-                            <form method="post">
-                                <input type="text" size="30" placeholder="24 digit kode">
-                                <button class="blue" type="submit">Download</button>
-                            </form><br>
+                            <span id="exTry" class="close">&times;</span>
+                            <h2>Akun Demo</h2>
+                            Anda dapat mencoba aplikasi SIM-RS secara gratis melalui link berikut<hr>
+                            <button class="white">Cara Akses</button>
+                            <button class="blue">Masuk</button>
                             <script>
-                                var mdDL = document.getElementById("mdDL");
-                                var btDL = document.getElementById("btDL");
-                                var exDL = document.getElementById("exDL");
-                                var inDL = document.getElementById("drug");
-                                btDL.onclick = function() {
-                                mdDL.style.display = "block";
-                                inDL.focus();
+                                var mdTry = document.getElementById("mdTry");
+                                var btTry = document.getElementById("btTry");
+                                var exTry = document.getElementById("exTry");
+                                var inTry = document.getElementById("drug");
+                                btTry.onclick = function() {
+                                mdTry.style.display = "block";
+                                inTry.focus();
                                 }
-                                exDL.onclick = function() {
-                                mdDL.style.display = "none";
+                                exTry.onclick = function() {
+                                mdTry.style.display = "none";
                                 }
                                 window.onclick = function(event) {
-                                    if (event.target == mdDL) {
-                                        mdDL.style.display = "none";
+                                    if (event.target == mdTry) {
+                                        mdTry.style.display = "none";
                                     }
                                 }
                             </script>
                         </div>
                     </div>
-                <a class="sidebar" href="extension.html"><img class="icon" src="asset/icon/silk/plugin.png">Ekstensi</a> <span class="pop fl-r">1</span> <hr>
-                <a class="sidebar" href="manual.html"><img class="icon" src="asset/icon/silk/book.png">Panduan</a><hr>
-                <a class="sidebar" href="changelog.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
-                <a class="sidebar" href="about.html"><img class="icon" src="asset/icon/silk/information.png">Tentang</a>
-                <a class="sidebar" href="faq.html"><img class="icon" src="asset/icon/silk/help.png">Pertanyaan</a>
-            </div>
+                    <a class="sidebar" href="feature.html"><img class="icon" src="asset/icon/silk/package.png">Detail Fitur</a><hr>
+                    <a class="sidebar" id="btDL"><img class="icon" src="asset/icon/silk/computer_go.png">Download</a><hr>
+                        <div id="mdDL" class="modal-wrapper">
+                            <div class="modal-s-content">
+                                <span id="exDL" class="close">&times;</span>
+                                <h2>Download Aplikasi SIM-RS v.2.4</h2>
+                                Masukkan kode download yang telah terverifikasi untuk melanjutkan. <hr>
+
+                                <form method="post">
+                                    <input type="text" size="30" placeholder="24 digit kode">
+                                    <button class="blue" type="submit">Download</button>
+                                </form><br>
+                                <script>
+                                    var mdDL = document.getElementById("mdDL");
+                                    var btDL = document.getElementById("btDL");
+                                    var exDL = document.getElementById("exDL");
+                                    var inDL = document.getElementById("drug");
+                                    btDL.onclick = function() {
+                                    mdDL.style.display = "block";
+                                    inDL.focus();
+                                    }
+                                    exDL.onclick = function() {
+                                    mdDL.style.display = "none";
+                                    }
+                                    window.onclick = function(event) {
+                                        if (event.target == mdDL) {
+                                            mdDL.style.display = "none";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    <a class="sidebar" href="extension.html"><img class="icon" src="asset/icon/silk/plugin.png">Ekstensi</a> <span class="pop fl-r">1</span> <hr>
+                    <a class="sidebar" href="manual.html"><img class="icon" src="asset/icon/silk/book.png">Panduan</a><hr>
+                    <a class="sidebar" href="changelog.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
+                    <a class="sidebar" href="faq.html"><img class="icon" src="asset/icon/silk/help.png">Pertanyaan</a><hr>
+                    <a class="sidebar" href="about.html"><img class="icon" src="asset/icon/silk/information.png">Tentang</a>
+                </div><br>
+
+                <div class="side">
+                    <h3><img class="icon" src="asset/icon/silk/telephone.png">Kontak Kami</h3><hr>
+                    <img class="icon" src="asset/icon/silk/bullet_green.png">Whatsapp : <span class="cl-blue">0821-416-33322</span><br>
+                    <img class="icon" src="asset/icon/silk/bullet_green.png">Youtube Channel : <span class="cl-blue">SIM-RS</span><br>
+                </div>
+            </div><!-- End of wrapper-side -->
             <div class="content">
                 <p class="blue"><img class="va-tb" src="asset/icon/silk/bullet_go.png"> SIM-RS &raquo; Detail Fitur </p><hr>
                 <h2>Detail Fitur Aplikasi</h2>
@@ -87,21 +95,54 @@
                 <h3>Fitur Umum</h3>
                 <ul>
                     <li>Registrasi pasien baru/lama</li>
+                    <li>Penomoran rekam medis dan nomor billing otomatis</li>
                     <li>Database pasien</li>
                     <li>Cetak form rekam medis identitas pasien</li>
                     <li>Cetak gelang pasien (optional)</li>
                     <li>Cetak label identitas pasien</li>
                     <li>Cetak kartu kunjungan pasien</li>
+                    <li>Pricelist tindakan</li>
                     <li>Input tindakan IGD</li>
                     <li>Input tindakan Rawat Jalan</li>
-                    <li>Input tindakan Rawat Inap</li> 
+                    <li>Input tindakan Rawat Inap</li>
+                    <li>Pindah ruangan perawatan pasien</li>
+                    <li>Input pemakaian obat/alat medis pasien</li>
+                    <li>Input pemakaian obat/alat medis non-pasien</li>
+                    <li>Cetak nota transaksi obat/alat medis untuk pasien/non-pasien</li>
+                    <li>Database obat/alat medis</li>
+                    <li>Pelacak riwayat pemakaian obat pasien</li>
+                    <li>Laporan pemakaian obat/alat medis bulanan yang dapat di export menjadi PDF</li>
+                    <li>Input hasil pemeriksaan laboratorium</li>
+                    <li>Cetak hasil pemeriksaan laboratorium</li>
+                    <li>Input hasil pemeriksaan radiologi</li>
+                    <li>Cetak hasil pemeriksaan radiologi</li>
+                    <li>Rekap rincian keseluruhan biaya perawatan pasien</li>
+                    <li>Cetak rincian biaya perawatan pasien</li>
+                    <li>Cetak nota pembayaran pasien</li>
+                    <li>Export database pasien (.csv)</li>
+                    <li>Statistik kunjungan pasien IGD, Rawat Jalan, Rawat Inap bulanan</li>
                 </ul>
 
-                <h3>Fitur Keamanan</h3>
+                <h3>Administrator</h3>
+                <ul>
+                    <li>Registrasi user baru dan pembaruan data user</li>
+                    <li>Database tindakan medis/keperawatan</li>
+                    <li>Database Dokter (optional)</li>
+                    <li>Database Kamar</li>
+                </ul>
+
+                <h3>Keamanan</h3>
                 <ul>
                     <li>Sistem login dengan username dan password</li>
                     <li>Logout otomatis setelah 10 menit tidak digunakan</li>
                     <li>Aksesibilitas aplikasi dengan IP statis</li>
+                </ul>
+
+                <h3>Lain-Lain</h3>
+                <ul>
+                    <li>Pencarian data menggunakan metode AJAX</li>
+                    <li>Display database menggunakan pagination</li>
+                    <li>Pengaturan waktu mengikuti pengaturan waktu server</li>
                 </ul>
 
             </div>
