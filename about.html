@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>limeHash</title>
+        <link rel="stylesheet" href="css/default.css">
+    </head>
+    <body>
+        <div class="header">
+            <a class="webName">SIM-RS</a> v.2.4
+        </div>
+        <div class="wrapper">
+            <div class="wrapper-side"><!-- Start of wrapper-side -->
+                <div class="side">
+                    <a class="sidebar" href="http://limehash.github.io"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
+                    <a class="sidebar" id="btTry"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
+                    <div id="mdTry" class="modal-wrapper">
+                        <div class="modal-s-content">
+                            <span id="exTry" class="close">&times;</span>
+                            <h2>Akun Demo</h2>
+                            Anda dapat mencoba aplikasi SIM-RS secara gratis melalui link berikut<hr>
+                            <button class="white">Cara Akses</button>
+                            <button class="blue">Masuk</button>
+                            <script>
+                                var mdTry = document.getElementById("mdTry");
+                                var btTry = document.getElementById("btTry");
+                                var exTry = document.getElementById("exTry");
+                                var inTry = document.getElementById("drug");
+                                btTry.onclick = function() {
+                                mdTry.style.display = "block";
+                                inTry.focus();
+                                }
+                                exTry.onclick = function() {
+                                mdTry.style.display = "none";
+                                }
+                                window.onclick = function(event) {
+                                    if (event.target == mdTry) {
+                                        mdTry.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <a class="sidebar" href="feature.html"><img class="icon" src="asset/icon/silk/package.png">Detail Fitur</a><hr>
+                    <a class="sidebar" id="btDL"><img class="icon" src="asset/icon/silk/computer_go.png">Download</a><hr>
+                        <div id="mdDL" class="modal-wrapper">
+                            <div class="modal-s-content">
+                                <span id="exDL" class="close">&times;</span>
+                                <h2>Download Aplikasi SIM-RS v.2.4</h2>
+                                Masukkan kode download yang telah terverifikasi untuk melanjutkan. <hr>
+
+                                <form method="post">
+                                    <input type="text" size="30" placeholder="24 digit kode">
+                                    <button class="blue" type="submit">Download</button>
+                                </form><br>
+                                <script>
+                                    var mdDL = document.getElementById("mdDL");
+                                    var btDL = document.getElementById("btDL");
+                                    var exDL = document.getElementById("exDL");
+                                    var inDL = document.getElementById("drug");
+                                    btDL.onclick = function() {
+                                    mdDL.style.display = "block";
+                                    inDL.focus();
+                                    }
+                                    exDL.onclick = function() {
+                                    mdDL.style.display = "none";
+                                    }
+                                    window.onclick = function(event) {
+                                        if (event.target == mdDL) {
+                                            mdDL.style.display = "none";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    <a class="sidebar" href="extension.html"><img class="icon" src="asset/icon/silk/plugin.png">Ekstensi</a> <span class="pop fl-r">1</span> <hr>
+                    <a class="sidebar" href="manual.html"><img class="icon" src="asset/icon/silk/book.png">Panduan</a><hr>
+                    <a class="sidebar" href="changelog.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
+                    <a class="sidebar" href="faq.html"><img class="icon" src="asset/icon/silk/help.png">Pertanyaan</a><hr>
+                    <a class="sidebar" href="about.html"><img class="icon" src="asset/icon/silk/information.png">Tentang</a>
+                </div><br>
+
+                <div class="side">
+                    <h3><img class="icon" src="asset/icon/silk/telephone.png">Kontak Kami</h3><hr>
+                    <img class="icon" src="asset/icon/silk/bullet_green.png">Whatsapp : <span class="cl-blue">0821-416-33322</span><br>
+                    <img class="icon" src="asset/icon/silk/bullet_green.png">Youtube Channel : <span class="cl-blue">SIM-RS</span><br>
+                </div>
+            </div><!-- End of wrapper-side -->
+            <div class="content">
+                <p class="blue"><img class="va-tb" src="asset/icon/silk/bullet_go.png"> SIM-RS &raquo; Tentang Aplikasi </p><hr>
+                <h2>Tentang Aplikasi</h2><hr>
+
+                Sejarah versi <br>
+                <ul>
+                    <li>v.1.0 : Berbasis desktop, dibangun dengan bahasa Java (tidak dilanjutkan)</li>
+                    <li>v.2.0 : Berbasis web, awal masa pengembangan untuk unit Pendaftaran, Farmasi, Kasir</li>
+                    <li>v.2.1 : Penambahan unit rawat jalan, rawat inap.</li>
+                    <li>v.2.2 : Penambahan unit laboratorium, radiologi.</li>
+                    <li>v.2.3 : Rewrite untuk perubahan UI (tidak maksimal)</li>
+                    <li>v.2.4 : Perubahan UI, meminimalkan penggunaan resource, update fitur, penambahan ekstensi.  </li>
+                </ul><hr>
+
+                Author : <br>
+                <ul>
+                    <li>Pengembang : Bayu A. Saputra</li>
+                    <li>Dibangun dengan : HTML, PHP, Javascript</li>
+                    <li>Development : 2019-2021</li>
+                </ul><hr>
+
+                Icons : <br>
+                <ul>
+                    <li><a href="http://www.famfamfam.com/lab/icons/silk/">http://www.famfamfam.com/lab/icons/silk/</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </body>
+</html>
