@@ -12,23 +12,22 @@
         <div class="wrapper">
             <div class="wrapper-side"><!-- Start of wrapper-side -->
                 <div class="side">
-                    <a class="sidebar" href="http://sim-rs.com"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
+                    <a class="sidebar" href="index.html"><img class="icon" src="asset/icon/silk/world.png">Halaman Awal</a> <hr>
                     <a class="sidebar" id="btTry"><img class="icon" src="asset/icon/silk/pictures.png">Coba Akun Demo</a> <span class="pop-green fl-r">Free</span><hr>
                     <div id="mdTry" class="modal-wrapper">
                         <div class="modal-s-content">
                             <span id="exTry" class="close">&times;</span>
                             <h2>Akun Demo</h2>
                             Anda dapat mencoba aplikasi SIM-RS secara gratis melalui link berikut<hr>
-                            <button class="white">Cara Akses</button>
-                            <button class="blue">Masuk</button>
+                            <button class="white" id="btAccess">Cara Akses</button>
+                            <button class="blue" id="btLogin">Masuk</button>
                             <script>
+                                /* Demo */
                                 var mdTry = document.getElementById("mdTry");
                                 var btTry = document.getElementById("btTry");
                                 var exTry = document.getElementById("exTry");
-                                var inTry = document.getElementById("drug");
                                 btTry.onclick = function() {
                                 mdTry.style.display = "block";
-                                inTry.focus();
                                 }
                                 exTry.onclick = function() {
                                 mdTry.style.display = "none";
@@ -37,6 +36,16 @@
                                     if (event.target == mdTry) {
                                         mdTry.style.display = "none";
                                     }
+                                }
+                                /* How To Access */
+                                var btAccess = document.getElementById('btAccess');
+                                btAccess.onclick = function() {
+                                    window.open('faq.html', '_SELF');
+                                }
+                                /* Login to demo */
+                                var btLogin = document.getElementById('btLogin');
+                                btLogin.onclick = function() {
+                                    window.open('nt-demo.html', '_BLANK');
                                 }
                             </script>
                         </div>
@@ -48,21 +57,20 @@
                                 <span id="exDL" class="close">&times;</span>
                                 <h2>Download Aplikasi SIM-RS v.2.4</h2>
                                 Masukkan kode download yang telah terverifikasi untuk melanjutkan. <hr>
+                                <input type="text" size="30" id="key" placeholder="24 digit kode" autocomplete="off">
+                                <button class="blue" type="button" id="btDLnow">Download</button>
 
-                                <form method="post">
-                                    <input type="text" size="30" placeholder="24 digit kode">
-                                    <button class="blue" type="button">Download</button>
-                                </form><br>
                                 <script>
+                                    /* Open download */
                                     var mdDL = document.getElementById("mdDL");
                                     var btDL = document.getElementById("btDL");
                                     var exDL = document.getElementById("exDL");
-                                    var inDL = document.getElementById("drug");
+                                    var key = document.getElementById("key");
                                     btDL.onclick = function() {
                                     mdDL.style.display = "block";
-                                    inDL.focus();
+                                    key.focus();
                                     }
-                                    exDL.onclick = function() {
+                                    exDL.onclick = function(){
                                     mdDL.style.display = "none";
                                     }
                                     window.onclick = function(event) {
@@ -70,12 +78,17 @@
                                             mdDL.style.display = "none";
                                         }
                                     }
+                                    /* Download button */
+                                    var btDLnow = document.getElementById('btDLnow');
+                                    btDLnow.onclick = function(){
+                                        window.open('nt-verify.html?' + document.getElementById('key').value, '_SELF');
+                                    }
                                 </script>
                             </div>
                         </div>
                     <a class="sidebar" href="#.html"><img class="icon" src="asset/icon/silk/plugin.png">Ekstensi</a> <span class="pop fl-r">1</span> <hr>
                     <a class="sidebar" href="#.html"><img class="icon" src="asset/icon/silk/book.png">Panduan</a><hr>
-                    <a class="sidebar" href="#.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
+                    <a class="sidebar" href="changelog.html"><img class="icon" src="asset/icon/silk/page_edit.png">Change Log</a><hr>
                     <a class="sidebar" href="faq.html"><img class="icon" src="asset/icon/silk/help.png">Pertanyaan</a><hr>
                     <a class="sidebar" href="about.html"><img class="icon" src="asset/icon/silk/information.png">Tentang</a>
                 </div><br>
@@ -87,7 +100,7 @@
             </div><!-- End of wrapper-side -->
 
             <div class="content">
-                <p class="blue"><img class="va-tb" src="asset/icon/silk/bullet_go.png"> SIM-RS &raquo; Detail Fitur </p><hr>
+                <p class="cl-blue"><img class="va-tb" src="asset/icon/silk/bullet_go.png"> SIM-RS &raquo; Detail Fitur </p><hr>
                 <h2>Detail Fitur Aplikasi</h2>
                 <p>Berikut daftar fitur yang telah tersedia pada aplikasi SIM-RS v.2.4</p>
                 <br>
