@@ -81,3 +81,35 @@ li{ margin-left: -10px; }
 .pop-red:hover{ background: linear-gradient(#EC407A, #F48FB1); }
 .ta-c{ text-align: center; }
 .va-tb{ vertical-align: text-bottom; }
+
+@media screen and (max-width: 600px) {
+    div.wrapper{
+        width: 90%;
+        margin: 0 auto;
+        padding: 5% 0;
+        overflow: auto;
+    }
+    div.wrapper-side{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    div.side{
+        padding: 5%;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+    .content{
+        float: none;
+        width: 100%;
+        padding: 5%;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+}
